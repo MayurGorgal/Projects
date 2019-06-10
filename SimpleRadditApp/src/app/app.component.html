@@ -1,0 +1,30 @@
+<form class="ui large form segment">
+
+    <h3 class="ui header">Add a Link</h3>
+
+    <div class="field">
+      <label for="title">Title:</label>
+      <input name="title" #newtitle>
+    </div>
+
+    <div class="field">
+      <label for="link">Link:</label>
+      <input name="link" #newlink>
+    </div>
+    
+    <button class="btn btn-primary" (click)="addArticle(newtitle,newlink)">Submit</button>
+
+    </form>
+
+    <!-- to display value of newtitle and newlink -->
+    <!-- {{newtitle.value}}-{{newlink.value}} -->
+    <!-- <app-article [ptitle]="ntitle" [plink]="nlink" 
+      *ngFor="let value"
+
+    ></app-article> -->
+
+    <app-article  *ngFor="let value of sortedArticle()"
+      [parentvalue]="value"
+    ></app-article>
+    
+    

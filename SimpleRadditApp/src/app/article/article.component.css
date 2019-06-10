@@ -1,0 +1,10 @@
+@import '/home/pranjal/ASSIGNMENT_ANGULAR/Articledemo/node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.mycolor{
+    background-color:grey;
+}
+h3{
+    text-align: center;
+    margin-top: 60px;
+
+}
